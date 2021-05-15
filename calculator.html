@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+	
+
+
+
+
+	<center>
+	<table style="background-color:white;border: 67px solid black;">
+	<tr>
+		<td colspan="4"><input type="text" id="display" style="width:50px;border: 1px solid black;box-shadow: 1px 2px #888888;"	></td>
+		</tr>
+	<tr>
+		<td>
+			<input type="button" style="width:50px;background-color:white; margin-left:7px; height:50px; border-radius:7px;box-shadow: 1px 5px #888888;" value="1" id="btn1" onclick="one(1)"></input></td><td><input id="btn2" value="2" type="button" style="width:50px; margin-left:7px; background-color:white; height:50px; border-radius:10px;box-shadow: 1px 5px #888888;" onclick="one(2)" ></input></td><td><input id="btn3" onclick="one(3) " style="width:50px; background-color:white; margin-left:7px; height:50px; border-radius:7px;box-shadow: 1px 5px #888888;" type="button" value="3"></input></td><td><input type="button" id="btn4" value="." style="width:50px; margin-left:7px;background-color:white; height:50px; border-radius:7px;box-shadow: 1px 5px #888888;" onclick="one('.')"></input>
+	    </td>
+			</tr>
+	<tr >
+		<td>
+			<input id="btn5" value="4" type="button" style="width:50px; margin-left:7px; height:50px;background-color:white; border-radius:10px;box-shadow: 1px 5px #888888;" onclick="one(4)"></input></td><td><input type="button" id="btn6" value="5" style="width:50px;box-shadow: 1px 5px #888888; margin-left:7px; height:50px;background-color:white; border-radius:10px;" onclick="one(5)"></input></td><td><input id="btn7" value="-" type="button" style="width:50px; margin-left:7px; height:50px;background-color:white;box-shadow: 1px 5px #888888; border-radius:10px;" onclick="one('-')"></input></td><td><input type="button" id="btn8" value="+" style="width:50px; margin-left:7px;box-shadow: 1px 5px #888888; height:50px;background-color:white; border-radius:10px;" onclick="one('+')"></input>
+			</td>
+		</tr>
+	<tr>
+		<td><input id="btn9" type="button" style="width:50px;box-shadow: 1px 5px #888888; margin-left:7px; height:50px; border-radius:10px;background-color:white;" value="6" onclick="one(6)"></input></td><td><input type="button" id="btn10" value="7" style="width:50px;background-color:white; margin-left:7px;box-shadow: 1px 5px #888888; height:50px; border-radius:10px;" onclick="one(7)"></input></td><td><input id="btn11" type="button" onclick="one('*')" style="width:50px; margin-left:7px;background-color:white; height:50px; box-shadow: 1px 5px #888888;border-radius:10px;" value="*"></input></td><td><input id="btn12" type="button" value="/" onclick="one('/')" style="width:50px; margin-left:7'
+		px;background-color:white; box-shadow: 1px 5px #888888;height:50px; border-radius:10px;"></input>
+			</td>
+		</tr>
+	<tr>
+		<td>
+			<input id="btn13" type="button" style="width:50px;background-color:white;box-shadow: 1px 5px #888888; margin-left:7px; height:50px; border-radius:10px;" value="8" onclick="one(8)"></input></td><td><input id="btn14" style="width:50px;background-color:white;box-shadow: 1px 5px #888888; margin-left:7px; height:50px; border-radius:10px;" onclick="one(9)" value="9" type="button"></input></td><td><input id="btn15" style="width:50px;background-color:white;box-shadow: 1px 5px #888888; margin-left:7px; height:50px; border-radius:10px;" type="button" value="0" onclick="one(0)"></td><td><input type="button" style="width:50px;box-shadow: 1px 5px #888888;background-color:white; margin-left:7px; height:50px; border-radius:10px;" onclick="equals()" value="=">
+			</td>
+	 </tr>
+			</table>
+		</center>
+
+
+	<script>		
+		function one(value){
+			document.getElementById("display").value +=value
+		}
+		function equals(){
+		 var solution=eval(display.value)
+		 display.value =solution
+		}
+		</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

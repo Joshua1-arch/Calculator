@@ -1,0 +1,29 @@
+table{
+    border: 1px solid white;
+    width: 1px;
+    height: 200px;
+    padding-right: -100px
+}
+tr{
+    height: 100px
+}
+td{
+    height: 10px;
+}
+#display{
+    margin-top: -25px;
+    margin-bottom: -25px;
+    /*margin-right: -60px;*/
+    padding-right: 260px;
+    height: 100%;
+    color: black;
+    
+}
+button{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px
+}
